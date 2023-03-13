@@ -1,0 +1,140 @@
+.notes-container, .outer-one-note-container{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto auto auto auto auto;
+    padding: 50px 2%;
+    max-width: 100%;
+}
+
+.box, .one-note-container {
+background-color: #444;
+color: #fff;
+border-radius: 5px;
+padding: 20px;
+font-size: 20px;
+display: inline-block;
+width: fit-content;
+
+}
+.one-note-container{
+    width: 50vw;
+    margin: auto;
+}
+.outer-one-note-container{
+    grid-template-columns: auto;
+}
+/* #181823
+#537FE7
+#C0EEF2
+#E9F8F9 */
+
+
+.note-card-small{
+    background-color: #E9F8F9;
+}
+
+.note-card-wide{
+    background-color: #537FE7;
+}
+
+.note-card-medium{
+    background-color: #C0EEF2;
+}
+
+.new-note{
+    display: flex;
+    align-items: center;
+    color: #537FE7;
+    cursor: pointer;
+}
+
+.text{
+    height: 200px;
+    display: block;
+    margin: auto;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.close-btn{
+    float: right;
+    cursor: pointer;
+}
+
+.link-btn{
+    cursor: pointer;
+}
+.addnote-container{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+.addnote-container > div{
+    background-color: #537FE7;
+    width: 30%;
+    margin: auto;
+    margin-top: 100px;
+    padding: 30px;
+}
+
+.addnote-container > div > span {
+    margin-right: 15px;
+}
+
+.submit-link{
+    background-color: #fff;
+    color: green;
+    border: none;
+    margin-left: 10px;
+
+}
+
+.share{
+    font-size: 15px;
+}
+
+
+
+@media only screen and (max-width:900px){
+    .notes-container{
+        grid-template-columns: auto auto auto ;
+    }
+    .addnote-container > div{
+        width: 50%;
+        margin-top:50px;
+        padding: 20px;
+    }
+}
+
+
+@media only screen and (max-width:500px){
+    .notes-container{
+        grid-template-columns: auto auto ;
+    }
+    .one-note-container{
+        width: 100vw;
+    }
+    .addnote-container > div{
+        width: 70%;
+        margin-top:30px;
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width:350px){
+    .notes-container{
+        grid-template-columns: 100px 100px ;
+        padding: 17%;
+    }
+    .box{
+        font-size: 15px;
+        width: auto;
+    }
+    .addnote-container > div{
+        width: 90%;
+        margin-top:30px;
+        padding: 10px;
+    }
+}
