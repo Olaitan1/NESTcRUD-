@@ -1,6 +1,6 @@
 
 
-To run the the 'Client (Frontend)' 
+To run the the 'clientSide (Frontend)' 
 ## run= yarn dev
 
 To start the Backend
